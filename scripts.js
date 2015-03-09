@@ -12,4 +12,7 @@ for (var i=0; i<mappingHealthCentres.length; i++) {
 	
 	var marker = L.marker([healthCentreLocation.latitude, healthCentreLocation.longitude]).addTo(map);
 	
+	marker.bindPopup("<b>"+healthCentreLocation.NameOfCenter+"</b><br>"+healthCentreLocation.FullAddress);
+	
 }
+
